@@ -1,0 +1,8 @@
+C:\Users\lucas.gcosta15\source\repos\Exercicios\Exercicios\bin\Debug\Exercicios.exe.config
+C:\Users\lucas.gcosta15\source\repos\Exercicios\Exercicios\bin\Debug\Exercicios.exe
+C:\Users\lucas.gcosta15\source\repos\Exercicios\Exercicios\bin\Debug\Exercicios.pdb
+C:\Users\lucas.gcosta15\source\repos\Exercicios\Exercicios\obj\Debug\Exercicios.csproj.AssemblyReference.cache
+C:\Users\lucas.gcosta15\source\repos\Exercicios\Exercicios\obj\Debug\Exercicios.csproj.CoreCompileInputs.cache
+C:\Users\lucas.gcosta15\source\repos\Exercicios\Exercicios\obj\Debug\Exercicios.exe
+C:\Users\lucas.gcosta15\source\repos\Exercicios\Exercicios\obj\Debug\Exercicios.pdb
+C:\Users\lucas.gcosta15\source\repos\Exercicios\Exercicios\obj\Debug\Exercicios.exe.config
