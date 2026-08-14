@@ -74,7 +74,16 @@ namespace Exercicios
                          "11. Exercicio 03 \n" +
                          "12. Exercicio 04 \n" +
                          "13. Exercicio 05 \n" +
-                         "14. Exercicio 06 \n");
+                         "14. Exercicio 06 \n" +
+                         "15. Exercicio 07 \n" +
+                         "16. Exercicio 08 \n" +
+                         "17. Exercicio09 \n" +
+                         "18. Exercicio10 \n" +
+                         "19. Exercicio11 \n" +
+                         "20. multiplo \n"+
+                         "21. multiploFor \n"+
+                         "22. EhPalindromo \n"+
+                         "23. ContarParImpar \n");
 
             SetOpcao(Convert.ToInt32(Console.ReadLine()));
             Console.Clear();//limpar o console
@@ -227,7 +236,80 @@ namespace Exercicios
                         double lado3 = Convert.ToDouble(Console.ReadLine());
                         Console.WriteLine(this.modelo.Exercicio06(lado1,lado2,lado3));
                         break;
-                        
+
+                    case 15:
+                        Console.WriteLine("Informe um numero de 1 a 7");
+                        int dia = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine(this.modelo.Exercicio07(dia));
+                     break;
+
+                    case 16:
+                        Console.WriteLine("insira sua senha");
+                        string SenhaBD =Convert.ToString(Console.ReadLine());
+                        Console.WriteLine(this.modelo.Exercicio08(SenhaBD));
+                        break;
+
+                    case 17:
+                        Console.WriteLine("informe o horario");
+                        DateTime horario1 = Convert.ToDateTime(Console.ReadLine());
+                        Console.WriteLine("informe o segundo horario");
+                        DateTime horario2 = Convert.ToDateTime(Console.ReadLine());
+                        Console.WriteLine(this.modelo.Exercicio09(horario1,horario2));
+                        break;
+
+                    case 18:
+                        Console.WriteLine("Informe o primeiro numero");
+                         numero1 = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Informe o segundo numero");
+                        numero2 = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine(this.modelo.Exercicio10(numero1, numero2));
+                        break;
+
+                    case 19:
+                        Console.WriteLine("Informe a primeira nota ");
+                        num1 = Convert.ToDouble(Console.ReadLine());
+                        Console.WriteLine("Informe a segunda nota");
+                         num2 = Convert.ToDouble(Console.ReadLine());
+                        Console.WriteLine("Informe a terceira nota");
+                        num3 = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Informe a quarta nota");
+                         num4 = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("informe a quinta nota");
+                         num5 = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine(this.modelo.Exercicio11(num1, num2, num3, num4, num5));  
+                        break;
+
+                    case 20:
+                        Console.WriteLine("informe um numero");
+                        int num = Convert.ToInt32(Console.ReadLine());
+                        //mostrar o resultado da operação
+                        Console.WriteLine(this.modelo.multiplo(num));
+                        break;
+
+                    case 21:
+                        Console.WriteLine("Informe um número");
+                         numero = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine(this.modelo.multiploFor(numero));
+                        break;
+
+                    case 22:
+                        Console.WriteLine("Informe um número");
+                        numero = Convert.ToInt32(Console.ReadLine());
+                        if(this.modelo.EhPalindromo(numero) == false)
+                        {
+                            Console.WriteLine("Não é Palíndromo");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Não é palindromo");
+                        }
+                            break;
+
+                    case 23:
+                        this.modelo.ContarParImpar();
+                        break;
+
+
                 }//fim do metodo excutar menu
                
             } while (GetOpcao() != 0);//fim do método executar menu

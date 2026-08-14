@@ -21,6 +21,7 @@ namespace Exercicios
         private double lado1;
         private double lado2;
         private double lado3;
+        private int dia;
         //Método Construtor: Instancia as variávesis na mémoria
         public ExercicioModel()
         {
@@ -240,7 +241,7 @@ namespace Exercicios
         }//Fim do Exercicio06
 
 
-        public string Exercicio07(int dia)
+        public string Exercicio07(int dia )
         {
             if (1 == dia)
             {
@@ -270,12 +271,145 @@ namespace Exercicios
             {
                 return "Sabado";
             }
+            else
+            {
+                return "Dia invalido";
+            }
         }//Fim do Exercicio07
-        
-        
 
-     
-    }//Fim classe
+        public string Exercicio08(string SenhaBD)
+        {
+            if (SenhaBD == "1234")
+            {
+                return "Seja bem-vindo";
+            }
+            else
+            {
+                return "Senha incorreta";
+            }
+        }//Fim do Exercicio08
+
+        public string Exercicio09(DateTime horario1, DateTime horario2)
+        {
+            if (horario1 >= horario2)
+            {
+                return "o horario 1 é maior ";
+            }
+            else
+            {
+                return "o horario 2 é maior";
+            }
+        }//Fim do Exercicio09
+
+        public string Exercicio10(int numero1, int numero2)
+        {
+            if (numero1 >= numero2)
+            {
+                return "o " + numero1 +"é maior ";
+            }
+            else
+            {
+                return "o " +numero2 +" é maior";
+            }
+        }//Fim do exercicio10
+
+        public string Exercicio11(double num1, double num2, double num3, double num4, double num5) 
+        {
+            double media = (num1 + num2 + num3 + num4 + num5) / 5;
+            return "a média é:  " + media;
+        }//Fim do exercicio11
+
+       //Leai um número inteiro e retorna todos os múltiplos  menores que 100
+
+        public string multiplo(int numero)
+        {
+            //contador
+            int i = 1;//criando o contador e definindo o ponto de partida
+            string resultado = "";
+            while (i < 100) ;
+            {
+                if (numero % i == 0)
+                {
+                    resultado  += i + "\n";
+                  
+                }
+                //Rodar o meu contador
+                i++;
+            }//Fim do while
+            return resultado;
+        }//fim do método
+
+        public string multiploFor(int numero)
+        {
+            string resultado = "";
+            for (int i=1; i<100 ; i ++)
+            {
+                if (numero % i == 0) 
+                { 
+                    resultado += i + "\n"; 
+                }
+            }
+            return resultado;
+        }//fim do método
+
+        //leia um número e verefique se ele é palíndromo ele é palíndromo(ex: 121, 1331, 1441, 0660)
+
+        public bool EhPalindromo(int numero)
+        {
+            string Palin = numero + "";
+            int fim = Palin.Length - 1;//meço oo tamanho de um conjunto de caracteres 
+            int inicio = 0;
+           
+
+            while (inicio < fim)
+            {
+                if (Palin.Substring(inicio, 1) != Palin.Substring(fim, 1))
+                {
+                    return false;
+                }
+                inicio++;
+                fim--;
+
+            }
+            return true;
+        }//Fim do método
+
+        //solicite ao usuário 10 números e conte os pares e ímpares
+        public void ContarParImpar()
+        {
+            int contarPar = 0;
+            int contarImpar = 0;
+
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine(i + 1 + " número");
+                int num =Convert.ToInt32(Console.ReadLine());
+                //comparação
+                if (num % 2 == 0)
+                {
+                    contarPar++;
+                }
+                else
+                {
+                    contarImpar++;
+                }//fim If
+            }//Fim for
+            Console.WriteLine("A quantidade de pares é: " + contarPar + "\nA quantidade de ímpares é " + contarImpar);
+        }//fim do método
+
+
+
+        public void vetor4(string numero)
+        {
+           return
+          
+
+        }//fim do metodo 
+
+        public void vetor5()
+
+
+        }//Fim classe
 }//Fim do projeto
 
 
