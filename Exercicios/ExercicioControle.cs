@@ -83,7 +83,12 @@ namespace Exercicios
                          "20. multiplo \n"+
                          "21. multiploFor \n"+
                          "22. EhPalindromo \n"+
-                         "23. ContarParImpar \n");
+                         "23. ContarParImpar \n"+
+                         "24. Vetror \n" +
+                         "25. Procurar número \n" +
+                         "26. mostrar número inverso \n"+
+                         "27. mostrar pares"+
+                         "28. mostrar média \n");
 
             SetOpcao(Convert.ToInt32(Console.ReadLine()));
             Console.Clear();//limpar o console
@@ -308,6 +313,37 @@ namespace Exercicios
                     case 23:
                         this.modelo.ContarParImpar();
                         break;
+
+                        case 24:
+                        this.modelo.preencherVetor();
+                        this.modelo.mostrarVetor();
+                        break;
+
+                        case 25:
+                        this.modelo.preencherVetor();
+                        Console.WriteLine("Informe um número para procurar no veto: ");
+                        num = Convert.ToInt32(Console.ReadLine());
+                        //Chamar o método de procura
+                        Console.WriteLine(this.modelo.ProcurarNumero(num));
+                        break;
+                            
+                        case 26:
+                        this.modelo.preencherVetor();
+                        this.modelo.mostrarInverso();
+                        break;
+
+                        case 27:
+                        this.modelo.preencherVetor();
+                        this.modelo.mostraPares();
+                        break;
+
+                        case 28:
+                        this.modelo.preencherVetor();
+                        this.modelo.fazerMedia();
+
+                        break;
+
+
 
 
                 }//fim do metodo excutar menu

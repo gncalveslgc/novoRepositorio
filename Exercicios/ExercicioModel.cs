@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Exercicios
 {
-    class ExercicioModel 
+    class ExercicioModel
     {
         //Área para declaração de variável globais
         private int num1;
@@ -22,6 +22,7 @@ namespace Exercicios
         private double lado2;
         private double lado3;
         private int dia;
+        public int[] vet;//criando vetor
         //Método Construtor: Instancia as variávesis na mémoria
         public ExercicioModel()
         {
@@ -29,7 +30,7 @@ namespace Exercicios
             setnum2(0);
             SetResultado(0);
         }//Fim do método construtor
-         
+
         public ExercicioModel(int num1, int num2)
         {
             SetNum1(num1);
@@ -95,12 +96,12 @@ namespace Exercicios
         }// fim da soma 
 
         public int GetResultado()
-        { 
+        {
             return this.resultado;
         }//fim do metodo
 
         public void SetResultado(int resultado)
-        { 
+        {
             this.resultado = resultado;
         }//fim do metodo setResultado
 
@@ -108,11 +109,11 @@ namespace Exercicios
         {
             SetResultado(GetNum1() - GetNum2());
             return GetResultado();
-            
+
         }//Fim do método subtrair 
 
         public int multiplicar()
-        { 
+        {
             SetResultado(GetNum1() * GetNum2());
             return GetResultado();
         }//fim do multiplicador     
@@ -131,7 +132,7 @@ namespace Exercicios
             {
                 SetResultado(GetNum1() / GetNum2());
                 return GetResultado();
-            
+
             }//fim do if
         }//fim do dividir
 
@@ -155,7 +156,7 @@ namespace Exercicios
         }
 
         public double RaizNum4()
-        { 
+        {
             return Math.Sqrt(GetNum4());
         }
 
@@ -170,10 +171,10 @@ namespace Exercicios
                 return ano + " Não é Bissexto";
             }
         }//fim do ano Bissexto 
-        
+
         public int Exercicio02(int numero)
         {
-            if (numero >= 100 &&  numero <=200)
+            if (numero >= 100 && numero <= 200)
             {
                 return -1;
             }
@@ -205,7 +206,7 @@ namespace Exercicios
             {
                 return "o numero esta no intervalo ";
             }
-            else  
+            else
             {
                 return "o número não esta no intervalo";
             }
@@ -234,14 +235,14 @@ namespace Exercicios
 
                 return "é triangulo escaleno!";
             }
-            else 
+            else
             {
                 return "triangulo isósceles!";
             }
         }//Fim do Exercicio06
 
 
-        public string Exercicio07(int dia )
+        public string Exercicio07(int dia)
         {
             if (1 == dia)
             {
@@ -305,21 +306,21 @@ namespace Exercicios
         {
             if (numero1 >= numero2)
             {
-                return "o " + numero1 +"é maior ";
+                return "o " + numero1 + "é maior ";
             }
             else
             {
-                return "o " +numero2 +" é maior";
+                return "o " + numero2 + " é maior";
             }
         }//Fim do exercicio10
 
-        public string Exercicio11(double num1, double num2, double num3, double num4, double num5) 
+        public string Exercicio11(double num1, double num2, double num3, double num4, double num5)
         {
             double media = (num1 + num2 + num3 + num4 + num5) / 5;
             return "a média é:  " + media;
         }//Fim do exercicio11
 
-       //Leai um número inteiro e retorna todos os múltiplos  menores que 100
+        //Leai um número inteiro e retorna todos os múltiplos  menores que 100
 
         public string multiplo(int numero)
         {
@@ -330,8 +331,8 @@ namespace Exercicios
             {
                 if (numero % i == 0)
                 {
-                    resultado  += i + "\n";
-                  
+                    resultado += i + "\n";
+
                 }
                 //Rodar o meu contador
                 i++;
@@ -342,11 +343,11 @@ namespace Exercicios
         public string multiploFor(int numero)
         {
             string resultado = "";
-            for (int i=1; i<100 ; i ++)
+            for (int i = 1; i < 100; i++)
             {
-                if (numero % i == 0) 
-                { 
-                    resultado += i + "\n"; 
+                if (numero % i == 0)
+                {
+                    resultado += i + "\n";
                 }
             }
             return resultado;
@@ -359,7 +360,7 @@ namespace Exercicios
             string Palin = numero + "";
             int fim = Palin.Length - 1;//meço oo tamanho de um conjunto de caracteres 
             int inicio = 0;
-           
+
 
             while (inicio < fim)
             {
@@ -383,7 +384,7 @@ namespace Exercicios
             for (int i = 0; i < 10; i++)
             {
                 Console.WriteLine(i + 1 + " número");
-                int num =Convert.ToInt32(Console.ReadLine());
+                int num = Convert.ToInt32(Console.ReadLine());
                 //comparação
                 if (num % 2 == 0)
                 {
@@ -399,17 +400,76 @@ namespace Exercicios
 
 
 
-        public void vetor4(string numero)
+
+        //vetores
+        //preencher vetor
+        public void preencherVetor()
         {
-           return
-          
+            this.vet = new int[10];//instanciando 
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine(i + 1 + "a Posição");
+                this.vet[i] = Convert.ToInt32(Console.ReadLine());
 
-        }//fim do metodo 
+            }//fim do for
+        }//fim do preencherVetor
+        public void mostrarVetor()
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine(i + 1 + " a Posição: " + this.vet[i]);
+            }//fim do for
+        }//fim do metodo
 
-        public void vetor5()
+        public string ProcurarNumero(int num)
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                if (vet[i] == num)
+                {
+                    return " O número está na posição: " + (i + 1);
+                }
+            }//fim do for
+            return "O " + num + "não foi encontrado no vetor";
+        }//fim do metodo
 
 
-        }//Fim classe
+
+        public void mostrarInverso()
+        {
+            for (int i = 9; i >= 0; i--)
+            {
+                Console.WriteLine(i + 1 + "ª posição " + this.vet[i]);
+            }//fim do for 
+        }//fim do metodo
+
+        public void mostraPares()
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                if (vet[i] % 2 == 0)
+                {
+                    Console.WriteLine("os numeros pares são: " + this.vet[i]);
+                }
+               
+            }//fim do for 
+        }//fim do metodo
+
+        public double fazerMedia()
+        {
+            int soma = 0;
+            for (int i = 0;i < 10;i++)
+            {
+                soma += this.vet[i];
+                Console.WriteLine("A média é " +this.vet[i]);
+            }
+            return soma / 10;
+            
+        }
+
+       
+    
+    }
 }//Fim do projeto
 
 
