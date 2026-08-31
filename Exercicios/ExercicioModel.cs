@@ -18,10 +18,9 @@ namespace Exercicios
         private double num3;
         private double num4;
         private int resultado;
-        private double lado1;
-        private double lado2;
-        private double lado3;
-        private int dia;
+        public string[] nomes;
+
+ 
         public int[] vet;//criando vetor
         //Método Construtor: Instancia as variávesis na mémoria
         public ExercicioModel()
@@ -327,7 +326,7 @@ namespace Exercicios
             //contador
             int i = 1;//criando o contador e definindo o ponto de partida
             string resultado = "";
-            while (i < 100) ;
+            while (i < 100) 
             {
                 if (numero % i == 0)
                 {
@@ -413,6 +412,7 @@ namespace Exercicios
 
             }//fim do for
         }//fim do preencherVetor
+
         public void mostrarVetor()
         {
             for (int i = 0; i < 10; i++)
@@ -457,18 +457,48 @@ namespace Exercicios
 
         public double fazerMedia()
         {
-            int soma = 0;
-            for (int i = 0;i < 10;i++)
+            double soma = 0;
+            for (int i = 0; i < 10; i++)
             {
                 soma += this.vet[i];
-                Console.WriteLine("A média é " +this.vet[i]);
             }
             return soma / 10;
-            
-        }
+        }//fim do metodo
 
-       
-    
+        public void nomesComA()
+        {
+            this.nomes = new string[10];
+                for(int i =0; i<10; i++)
+            {
+                Console.WriteLine(i + 1 + "nome: ");
+                this.nomes[i] = Console.ReadLine();
+            }//fim do for 
+        }//fim do metodo
+
+        public void procurarNomes(string nome)
+        {
+            for (int i = 0;i < 10;i++)
+            {
+                if (nomes[i] == nome)
+                {
+                    Console.WriteLine(nome[i]);
+                }
+            }//fim do for
+            Console.WriteLine("O" + nomes + "não foi encontrado");
+        }//fim do metodo
+
+        public string ProcurarNomeA(string letraA)
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                if (nomes[i] == letraA)
+                {
+                    return " O nome está: " + (i + 1);
+                }
+            }//fim do for
+            return "O " + letraA + "não foi encontrado no vetor";
+        }//fim do metodo
+
     }
 }//Fim do projeto
 

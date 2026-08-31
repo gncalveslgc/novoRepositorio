@@ -84,10 +84,10 @@ namespace Exercicios
                          "21. multiploFor \n"+
                          "22. EhPalindromo \n"+
                          "23. ContarParImpar \n"+
-                         "24. Vetror \n" +
+                         "24. Vetor \n" +
                          "25. Procurar número \n" +
                          "26. mostrar número inverso \n"+
-                         "27. mostrar pares"+
+                         "27. mostrar pares \n"+
                          "28. mostrar média \n");
 
             SetOpcao(Convert.ToInt32(Console.ReadLine()));
@@ -337,12 +337,12 @@ namespace Exercicios
                         this.modelo.mostraPares();
                         break;
 
-                        case 28:
+                    case 28:
                         this.modelo.preencherVetor();
-                        this.modelo.fazerMedia();
-
+                        Console.WriteLine(this.modelo.fazerMedia());
                         break;
 
+                
 
 
 
