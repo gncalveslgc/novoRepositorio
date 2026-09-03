@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Dynamic;
-using System.IO.Pipes;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Security.Policy;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 
 namespace Exercicios
 {
@@ -20,20 +13,20 @@ namespace Exercicios
         private int resultado;
         public string[] nomes;
 
- 
+
         public int[] vet;//criando vetor
         //Método Construtor: Instancia as variávesis na mémoria
         public ExercicioModel()
         {
             SetNum1(0);
-            setnum2(0);
+            Setnum2(0);
             SetResultado(0);
         }//Fim do método construtor
 
         public ExercicioModel(int num1, int num2)
         {
             SetNum1(num1);
-            setnum2(num2);
+            Setnum2(num2);
             SetResultado(0);
         }//Fim do método construtor 
 
@@ -62,7 +55,7 @@ namespace Exercicios
             return this.num2;
         }//fim do getNum2
 
-        public void setnum2(int num2)
+        public void Setnum2(int num2)
         {
             this.num2 = num2;
         }//fim do setNum2
@@ -89,7 +82,7 @@ namespace Exercicios
         }
 
 
-        public int soma()
+        public int Soma()
         {
             return this.num1 + this.num2;
         }// fim da soma 
@@ -111,7 +104,7 @@ namespace Exercicios
 
         }//Fim do método subtrair 
 
-        public int multiplicar()
+        public int Multiplicar()
         {
             SetResultado(GetNum1() * GetNum2());
             return GetResultado();
@@ -321,12 +314,12 @@ namespace Exercicios
 
         //Leai um número inteiro e retorna todos os múltiplos  menores que 100
 
-        public string multiplo(int numero)
+        public string Multiplo(int numero)
         {
             //contador
             int i = 1;//criando o contador e definindo o ponto de partida
             string resultado = "";
-            while (i < 100) 
+            while (i < 100)
             {
                 if (numero % i == 0)
                 {
@@ -339,7 +332,7 @@ namespace Exercicios
             return resultado;
         }//fim do método
 
-        public string multiploFor(int numero)
+        public string MultiploFor(int numero)
         {
             string resultado = "";
             for (int i = 1; i < 100; i++)
@@ -402,7 +395,7 @@ namespace Exercicios
 
         //vetores
         //preencher vetor
-        public void preencherVetor()
+        public void PreencherVetor()
         {
             this.vet = new int[10];//instanciando 
             for (int i = 0; i < 10; i++)
@@ -413,7 +406,7 @@ namespace Exercicios
             }//fim do for
         }//fim do preencherVetor
 
-        public void mostrarVetor()
+        public void MostrarVetor()
         {
             for (int i = 0; i < 10; i++)
             {
@@ -435,7 +428,7 @@ namespace Exercicios
 
 
 
-        public void mostrarInverso()
+        public void MostrarInverso()
         {
             for (int i = 9; i >= 0; i--)
             {
@@ -443,7 +436,7 @@ namespace Exercicios
             }//fim do for 
         }//fim do metodo
 
-        public void mostraPares()
+        public void MostraPares()
         {
             for (int i = 0; i < 10; i++)
             {
@@ -451,11 +444,11 @@ namespace Exercicios
                 {
                     Console.WriteLine("os numeros pares são: " + this.vet[i]);
                 }
-               
+
             }//fim do for 
         }//fim do metodo
 
-        public double fazerMedia()
+        public double FazerMedia()
         {
             double soma = 0;
             for (int i = 0; i < 10; i++)
@@ -465,19 +458,19 @@ namespace Exercicios
             return soma / 10;
         }//fim do metodo
 
-        public void nomesComA()
+        public void NomesComA()
         {
             this.nomes = new string[10];
-                for(int i =0; i<10; i++)
+            for (int i = 0; i < 10; i++)
             {
                 Console.WriteLine(i + 1 + "nome: ");
                 this.nomes[i] = Console.ReadLine();
             }//fim do for 
         }//fim do metodo
 
-        public void procurarNomes(string nome)
+        public void ProcurarNomes(string nome)
         {
-            for (int i = 0;i < 10;i++)
+            for (int i = 0; i < 10; i++)
             {
                 if (nomes[i] == nome)
                 {
@@ -496,10 +489,39 @@ namespace Exercicios
                     return " O nome está: " + (i + 1);
                 }
             }//fim do for
-            return "O " + letraA + "não foi encontrado no vetor";
+            return "O " + letraA + "Não foi encontrado no vetor";
         }//fim do metodo
 
-    }
+        public void Salario()
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                if (vet[i] < 1200)
+                {
+                    Console.WriteLine("Salario abaixo de R$ 1200,00 : " + this.vet[i]);
+                }//fim do if
+            }//fim do for 
+        }//fim do metodo     
+
+        public void Multiplosde5()
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                if (vet[i] % 5 == 0)
+                {
+                    Console.WriteLine("Números multiplos de 5" + this.vet[i]);
+                }//fim do if
+            }//fim do for
+        }//fim do metodo
+
+
+        
+
+
+
+
+    }//fim do for 
+
 }//Fim do projeto
 
 

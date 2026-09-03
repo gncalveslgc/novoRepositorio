@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\lucas.gcosta15\\source\\repos\\Exercicios\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1C54D044-3A9F-4F94-B233-47C4C3E7D069}|Exercicios\\Exercicios.csproj|C:\\Users\\lucas.gcosta15\\source\\repos\\Exercicios\\exercicios\\exerciciomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1C54D044-3A9F-4F94-B233-47C4C3E7D069}|Exercicios\\Exercicios.csproj|c:\\users\\lucas.gcosta15\\source\\repos\\exercicios\\exercicios\\exerciciomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1C54D044-3A9F-4F94-B233-47C4C3E7D069}|Exercicios\\Exercicios.csproj|solutionrelative:exercicios\\exerciciomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1C54D044-3A9F-4F94-B233-47C4C3E7D069}|Exercicios\\Exercicios.csproj|c:\\users\\lucas.gcosta15\\source\\repos\\exercicios\\exercicios\\exerciciocontrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1C54D044-3A9F-4F94-B233-47C4C3E7D069}|Exercicios\\Exercicios.csproj|C:\\Users\\lucas.gcosta15\\source\\repos\\Exercicios\\exercicios\\exerciciocontrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1C54D044-3A9F-4F94-B233-47C4C3E7D069}|Exercicios\\Exercicios.csproj|solutionrelative:exercicios\\exerciciocontrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -34,8 +34,7 @@
               "RelativeToolTip": "Exercicios\\Program.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-11T14:19:14.629Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-11T14:19:14.629Z"
             },
             {
               "$type": "Document",
@@ -45,7 +44,7 @@
               "RelativeDocumentMoniker": "Exercicios\\ExercicioModel.cs",
               "ToolTip": "C:\\Users\\lucas.gcosta15\\source\\repos\\Exercicios\\Exercicios\\ExercicioModel.cs",
               "RelativeToolTip": "Exercicios\\ExercicioModel.cs",
-              "ViewState": "AgIAANMBAAAAAAAAAAA6wO8BAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAOcBAAAAAAAAAAAcwAUCAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-11T14:19:13.108Z",
               "EditorCaption": ""
@@ -58,7 +57,7 @@
               "RelativeDocumentMoniker": "Exercicios\\ExercicioControle.cs",
               "ToolTip": "C:\\Users\\lucas.gcosta15\\source\\repos\\Exercicios\\Exercicios\\ExercicioControle.cs",
               "RelativeToolTip": "Exercicios\\ExercicioControle.cs",
-              "ViewState": "AgIAAEoBAAAAAAAAAAAQwFgBAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAFsBAAAAAAAAAAAAAGcBAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-11T14:19:10.235Z",
               "EditorCaption": ""

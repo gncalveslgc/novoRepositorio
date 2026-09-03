@@ -88,7 +88,10 @@ namespace Exercicios
                          "25. Procurar número \n" +
                          "26. mostrar número inverso \n"+
                          "27. mostrar pares \n"+
-                         "28. mostrar média \n");
+                         "28. mostrar média \n"+
+                         "29. quantos ganham abaixo de R$ 1.200\n"+
+                         "30. Múltiplos de 5\n"+
+                         "31. etores (pares e ímpares).\n");
 
             SetOpcao(Convert.ToInt32(Console.ReadLine()));
             Console.Clear();//limpar o console
@@ -106,7 +109,7 @@ namespace Exercicios
                 {
                     case 1:
                         Coletar();//pegar dois números 
-                        Console.WriteLine("A soma é: " + this.modelo.soma());
+                        Console.WriteLine("A soma é: " + this.modelo.Soma());
                         break; //finalizar a case
 
                     case 2:
@@ -132,7 +135,7 @@ namespace Exercicios
 
                     case 4:
                         Coletar();
-                        Console.WriteLine("A multiplicação é: " + this.modelo.multiplicar());
+                        Console.WriteLine("A multiplicação é: " + this.modelo.Multiplicar());
                         break;
 
                     case 5:
@@ -288,13 +291,13 @@ namespace Exercicios
                         Console.WriteLine("informe um numero");
                         int num = Convert.ToInt32(Console.ReadLine());
                         //mostrar o resultado da operação
-                        Console.WriteLine(this.modelo.multiplo(num));
+                        Console.WriteLine(this.modelo.Multiplo(num));
                         break;
 
                     case 21:
                         Console.WriteLine("Informe um número");
                          numero = Convert.ToInt32(Console.ReadLine());
-                        Console.WriteLine(this.modelo.multiploFor(numero));
+                        Console.WriteLine(this.modelo.MultiploFor(numero));
                         break;
 
                     case 22:
@@ -315,12 +318,12 @@ namespace Exercicios
                         break;
 
                         case 24:
-                        this.modelo.preencherVetor();
-                        this.modelo.mostrarVetor();
+                        this.modelo.PreencherVetor();
+                        this.modelo.MostrarVetor();
                         break;
 
                         case 25:
-                        this.modelo.preencherVetor();
+                        this.modelo.PreencherVetor();
                         Console.WriteLine("Informe um número para procurar no veto: ");
                         num = Convert.ToInt32(Console.ReadLine());
                         //Chamar o método de procura
@@ -328,21 +331,34 @@ namespace Exercicios
                         break;
                             
                         case 26:
-                        this.modelo.preencherVetor();
-                        this.modelo.mostrarInverso();
+                        this.modelo.PreencherVetor();
+                        this.modelo.MostrarInverso();
                         break;
 
                         case 27:
-                        this.modelo.preencherVetor();
-                        this.modelo.mostraPares();
+                        this.modelo.PreencherVetor();
+                        this.modelo.MostraPares();
                         break;
 
                     case 28:
-                        this.modelo.preencherVetor();
-                        Console.WriteLine(this.modelo.fazerMedia());
+                        this.modelo.PreencherVetor();
+                        Console.WriteLine(this.modelo.FazerMedia());
                         break;
 
-                
+                    case 29:
+                        this.modelo.PreencherVetor();
+                        this.modelo.Salario();
+                        break;
+
+                    case 30:
+                        this.modelo.PreencherVetor();
+                        this.modelo.Multiplosde5();
+                        break;
+
+                        case 31:
+                        this.modelo.PreencherVetor();  
+                 
+                        break;
 
 
 
